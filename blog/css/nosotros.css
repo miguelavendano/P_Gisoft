@@ -1,0 +1,19 @@
+.photog{
+	display: block;
+	float:left;
+
+}
+.description{
+	float:right;
+	display: block;
+	width:500px;
+	text-align: justify;
+	font-size:25px;
+	padding: 20px 0px 0px 0px;
+}
+#contenido{
+	height:2000px;
+}
+h1{
+	float:left;
+}

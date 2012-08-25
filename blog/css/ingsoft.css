@@ -1,0 +1,654 @@
+//FUENTES PERSONALIZADAS
+
+@font-face{
+	font-family:ubuntuRegular;
+	src:url(fuentes/Ubuntu-R.ttf) format("truetype")
+	
+}
+
+@font-face{
+	font-family:ubuntuBold;
+	src:url(fuentes/Ubuntu-B.ttf) format("truetype")
+	
+}
+@font-face{
+	font-family:ubuntuItalic;
+	src:url(fuentes/Ubuntu-I.ttf) format("truetype")
+	
+}
+@font-face{
+	font-family:ubuntuBoldItalic;
+	src:url(fuentes/Ubuntu-BI.ttf) format("truetype")
+	
+}
+/*ESTILOS BASICOS*/
+h1,h2,h3,h4,h5{
+	font-family:ubuntuBold;
+}
+h6{font-family: ubuntuRegular;}
+h1{
+	color: white;
+	font-size: 48px;
+	top:-20%;
+	margin-top:10px;
+	letter-spacing: 0px;
+	display:inline;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	margin:0px;
+	padding:0px;
+
+}
+
+h2{
+	color: white;
+	font-size: 16px;
+	top:-20%;
+	margin-top:10px;
+	letter-spacing: 0px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	margin:0px;
+	padding:0px;
+}
+#tipo{
+	position:absolute;
+	transform:translate(100px, 10px);
+	-webkit-transform:translate(100px, 10px);
+}
+
+h3{
+	margin:0px;
+	padding:0px;
+	font-size:36px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+h4{
+	margin:0px;
+	padding:0px;
+	font-size:14px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	color:black;
+}
+h6{
+color:white;
+font-size: 12px;
+}
+
+p{
+font-family: Arial, Helvetica, sans-serif;
+font-size:14px;
+color:rgba(105, 105, 105,2);
+}
+
+#gisoft{
+	color:white;
+	font-size:14px;
+	font-family: Lucida Calligraphy, Helvetica, sans-serif;
+	width:92%;
+	margin:30px 30px;
+	/*text-align:center;*/
+}
+
+#capital{
+ float: left;
+ line-height: 35px;
+ padding-right: 10px;
+
+ font-size:50px;
+ font-family: Edwardian Script ITC ,Lucida Calligraphy, Helvetica, sans-serif; 
+}
+
+/*Menu de Navegacion*/
+
+nav{
+	display:inline;
+	float:right;
+	margin :20px 40px 20px 10px;
+}
+nav ul{
+	font-size:12px;
+	padding-left:0px;
+	margin-left:0px;
+	background-color:grey;
+	color:white;
+	width:50%;
+	font-family:ubuntuRegular;
+	position:relative;
+	display:inline;
+}
+nav ul li{
+	display:inline;
+	text-align:center;
+}
+nav ul li a{
+	/*background:grey;*/
+	background:rgba(255,255,255,0);
+	color:white;
+	text-decoration:none;
+	float:right;
+	border:1px solid white;
+	border-radius:0px 10px 0px 10px;
+	-webkit-border-radius: 3px 20px 3px 20px;
+-moz-border-radius: 0px 10px 0px 10px;
+-o-border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 5px white;
+-webkit-box-shadow: 0px 0px 15px white;
+width:80px;
+-webkit-transition: -webkit-box-shadow 1s, background 1s;
+
+}
+
+nav ul li a:hover{
+	background:#E6E6E6;
+	color:black;
+	box-shadow:0px 0px 25px white;
+	-webkit-box-shadow:0px 0px 25px white;
+	-moz-box-shadow:0px 0px 25px white;
+	-o-box-shadow:0px 0px 25px white;
+
+}
+
+canvas{
+	border: 0px solid white;
+}
+/*Maquetacion Principal*/
+
+body{
+	text-align:center;
+	margin:0px;
+	background:url("../img/fondo.jpg"),Black;
+}
+#principal{
+	text-align:left;
+	margin:auto;
+	width:80%;
+	height:100%;
+	
+	position:relative;
+	
+}
+
+
+
+#cajaheader{
+	width:100%;
+	height:100px;
+	
+	position:absolute;
+}
+header{
+	display:table;
+	margin:auto;
+	text-align:left;
+	width:100%;
+	height:100px;
+	
+}
+
+#logo{
+	padding:0px;
+	display:inline;
+	position:relative;
+	top:5px;
+
+
+
+
+
+
+
+	
+
+}
+
+
+
+footer{
+	display:table;
+	margin:auto;
+	text-align:center;
+	width:100%;
+	background:darkgray;
+	border: 2px solid white;
+
+	border-radius:0px 0px 5px 35px;
+	-webkit-border-radius:0px 0px 5px 35px;
+	-moz-border-radius:0px 0px 5px 35px;
+	-o-border-radius:0px 0px 5px 35px;
+
+	box-shadow:0px 0px 10px white;
+	-webkit-box-shadow:0px 0px 10px white;
+	-moz-box-shadow:0px 0px 10px white;
+	-o-box-shadow:0px 0px 10px white;
+}
+#contenido{
+	width:910px;
+	border 2px solid white;
+	
+	background:rgba(255,255,255,0.8);
+	box-shadow:0px 0px 10px white;
+	-webkit-box-shadow:0px 0px 10px white;
+	-moz-box-shadow:0px 0px 10px white;
+	-o-box-shadow:0px 0px 10px white;
+
+}
+article{
+	color: rgba(70,130,180,1);
+	width:80%;
+	/*background: white;*/
+	background: rgba(173, 216, 230,0);
+	margin:10px;
+	height:100%;
+	border: 1px solid white;
+	border-radius:0px 25px 0px 25px;
+	-webkit-border-radius:0px 25px 0px 25px;
+	-moz-border-radius:0px 25px 0px 25px;
+	-o-border-radius:0px 25px 0px 25px;
+	box-shadow:3px 3px 10px black;
+	-webkit-box-shadow:3px 3px 10px black;
+	-moz-box-shadow:3px 3px 10px black;
+	-o-box-shadow:3px 3px 10px black;
+	padding:10px 10px 10px 150px;
+	opacity:1;
+	transition:opacity 1s,box-shadow 1s, trasform 1s, backgraund 1s;
+	-webkit-transition:opacity 1s, -webkit-box-shadow 1s, -webkit-trasform 1s,-webkit-backgraund 1s;
+	-moz-transition:opacity 1s, -moz-box-shadow 1s, -moz-trasform 1s,-mozz-backgraund 1s;
+	-o-transition:opacity 1s, -o-box-shadow 1s, trasform 1s;
+	-o-transform:scale(1,1),-o-backgraund 1s;
+	-webkit-transform:scale(1,1);
+	-moz-transform:scale(1,1);
+	-o-transform:scale(1,1);
+
+}
+time{
+	float:right;
+	font-family:ubuntuRegular;
+	font-size:10px;
+}
+article:hover{
+	box-shadow:0px 0px 25px white;
+	-webkit-box-shadow:0px 0px 25px white;
+	-moz-box-shadow:0px 0px 25px white;
+	-o-box-shadow:0px 0px 25px white;
+	opacity:1;
+	transform:scale(1.1,1);
+	-webkit-transform:scale(1.1,1);
+	-moz-transform:scale(1.1,1);
+	-o-transform:scale(1.1,1);
+	background:rgba(255,255,255,0.5);
+	color:Black;
+}
+article a{
+	text-decoration:none;
+	color:rgb(14,29,68);
+
+}
+
+article a:visited{
+	text-decoration:none;
+	color:rgb(14,29,68);
+}
+
+
+
+
+#postprevios{
+	float:right;
+	display:inline-table;
+	width:25%;
+	margin:10px;
+	padding:10px;
+	background: rgba(255,255,255,0.5);
+	border:1px solid white;
+	border-radius:0px 25px 0px 25px;
+	-webkit-border-radius:0px 25px 0px 25px;
+	-moz-border-radius:0px 25px 0px 25px;
+	-o-border-radius:0px 25px 0px 25px;
+	box-shadow: 3px 3px 10px black;
+	-webkit-box-shadow: 3px 3px 10px black;
+	-moz-box-shadow: 3px 3px 10px black;
+	-o-box-shadow: 3px 3px 10px black;
+
+}
+
+
+#h4{
+	color:rgb(14,29,68);
+	font-family:verdana;
+	font-weight:bold;
+	font-size: 20px;
+	/*text-shadow: 5px 0px 5px rgba(0,0,0,0.4); */
+	margin: 10px 20px;
+}
+
+#h5{
+	color:steelblue;
+	font-family:verdana;
+	font-weight:bold;
+	font-size: 20px;
+	/*text-shadow: 0px 0px 5px rgba(0,0,0,0.8); */
+	margin: 30px 20px;
+}
+
+aside ul{
+	width:100%;
+	height:100%;
+	padding-left:0;
+	padding-right:0;
+	color:black;
+	float:left;
+	font-family:ubuntuRegular;
+	font-size:10px;
+	list-style:none;
+}
+
+aside ul li{
+	width:100%;
+	text-decoration:none;
+	border:1px solid white;
+	border-radius:0px 5px 0px 5px;
+	-webkit-border-radius:0px 5px 0px 5px;
+	-moz-border-radius:0px 5px 0px 5px;
+	-o-border-radius:0px 5px 0px 5px;
+}
+
+aside ul li a{
+	width:100%;
+	height:10px;
+	overflow:hidden;
+	text-decoration:none;
+	color:gray;
+}
+
+#sobregisoft{
+	width:100%;
+	height:120px;
+	background:rgba(0,0,0,0.7);
+	/*background:url("/../img/blanco.png"),url("/../img/negro.png");*/
+	display:table;
+	color:white;
+	font-size:15px;
+	text-align:justify;
+
+}
+
+
+/*Articulos*/
+#autor{
+	font-family: Lucida Calligraphy, Helvetica, sans-serif;	
+	color: rgba(70,130,180,1);
+	font-size:11px
+	
+
+}
+
+
+
+
+
+
+#logoart1{
+width:100px;
+height:100px;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align:left;
+
+background:url('../photo/web.png');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display: box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 10px black;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px black;
+-moz-border-radius: 0px 10px 0px 10px;
+-moz-box-shadow: 0px 0px 10px black;
+-o-border-radius: 0px 10px 0px 10px;
+-o-box-shadow: 0px 0px 10px black;
+float:left;
+margin:10px;
+top:20px;
+
+position:absolute;
+transform:translate(-140px, 0px);
+-webkit-transform:translate(-140px, 0px);
+-moz-transform:translate(-140px, 0px);
+-o-transform:translate(-140px, 0px);
+
+}
+
+#logoart2{
+width:100px;
+height:100px;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align:left;
+
+background:url('../photo/gisoft.png');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display: box;
+top:20px;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 10px black;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px black;
+-moz-border-radius: 0px 10px 0px 10px;
+-moz-box-shadow: 0px 0px 10px black;
+-o-border-radius: 0px 10px 0px 10px;
+-o-box-shadow: 0px 0px 10px black;
+float:left;
+margin:10px;
+position:absolute;
+transform:translate(-140px, 0px);
+-webkit-transform:translate(-140px, 0px);
+-moz-transform:translate(-140px, 0px);
+-o-transform:translate(-140px, 0px);
+
+}
+
+#logoart3{
+width:100px;
+height:100px;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align:left;
+
+background:url('../photo/equipo.jpg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display: box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 10px black;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px black;
+-moz-border-radius: 0px 10px 0px 10px;
+-moz-box-shadow: 0px 0px 10px black;
+-o-border-radius: 0px 10px 0px 10px;
+-o-box-shadow: 0px 0px 10px black;
+float:left;
+margin:10px;
+top:20px;
+position:absolute;
+transform:translate(-140px, 0px);
+-webkit-transform:translate(-140px, 0px);
+-moz-transform:translate(-140px, 0px);
+-o-transform:translate(-140px, 0px);
+
+}
+
+#logoart4{
+width:100px;
+height:100px;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align:left;
+
+background:url('../photo/directorio.jpg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display: box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px black;
+-moz-border-radius: 0px 10px 0px 10px;
+-moz-box-shadow: 0px 0px 10px black;
+-o-border-radius: 0px 10px 0px 10px;
+-o-box-shadow: 0px 0px 10px black;
+box-shadow: 0px 0px 10px black;
+
+float:left;
+margin:10px;
+top:20px;
+position:absolute;
+transform:translate(-140px, 0px);
+-webkit-transform:translate(-140px, 0px);
+-moz-transform:translate(-140px, 0px);
+-o-transform:translate(-140px, 0px);
+
+}
+#logoart5{
+width:100px;
+height:100px;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align:left;
+
+background:url('../photo/configuracion.jpg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display: box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px black;
+-moz-border-radius: 0px 10px 0px 10px;
+-moz-box-shadow: 0px 0px 10px black;
+-o-border-radius: 0px 10px 0px 10px;
+-o-box-shadow: 0px 0px 10px black;
+box-shadow: 0px 0px 10px black;
+
+float:left;
+margin:10px;
+top:20px;
+position:absolute;
+transform:translate(-140px, 0px);
+-webkit-transform:translate(-140px, 0px);
+-moz-transform:translate(-140px, 0px);
+-o-transform:translate(-140px, 0px);
+
+}
+#logoart6{
+width:100px;
+height:100px;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align:left;
+
+background:url('../photo/gestion_de_riesgos.gif');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display: box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px black;
+-moz-border-radius: 0px 10px 0px 10px;
+-moz-box-shadow: 0px 0px 10px black;
+-o-border-radius: 0px 10px 0px 10px;
+-o-box-shadow: 0px 0px 10px black;
+box-shadow: 0px 0px 10px black;
+
+float:left;
+margin:10px;
+top:20px;
+position:absolute;
+transform:translate(-140px, 0px);
+-webkit-transform:translate(-140px, 0px);
+-moz-transform:translate(-140px, 0px);
+-o-transform:translate(-140px, 0px);
+
+}
+#logoart7{
+width:100px;
+height:100px;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align:left;
+
+background:url('../photo/cambios.gif');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display: box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px black;
+-moz-border-radius: 0px 10px 0px 10px;
+-moz-box-shadow: 0px 0px 10px black;
+-o-border-radius: 0px 10px 0px 10px;
+-o-box-shadow: 0px 0px 10px black;
+box-shadow: 0px 0px 10px black;
+
+float:left;
+margin:10px;
+top:20px;
+position:absolute;
+transform:translate(-140px, 0px);
+-webkit-transform:translate(-140px, 0px);
+-moz-transform:translate(-140px, 0px);
+-o-transform:translate(-140px, 0px);
+
+}
+
+#logoart8{
+width:100px;
+height:100px;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align:left;
+
+background:url('../photo/charter.jpg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display: box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px black;
+-moz-border-radius: 0px 10px 0px 10px;
+-moz-box-shadow: 0px 0px 10px black;
+-o-border-radius: 0px 10px 0px 10px;
+-o-box-shadow: 0px 0px 10px black;
+box-shadow: 0px 0px 10px black;
+
+float:left;
+margin:10px;
+top:20px;
+position:absolute;
+transform:translate(-140px, 0px);
+-webkit-transform:translate(-140px, 0px);
+-moz-transform:translate(-140px, 0px);
+-o-transform:translate(-140px, 0px);
+
+}
