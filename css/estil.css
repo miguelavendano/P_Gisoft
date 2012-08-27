@@ -200,32 +200,62 @@ p.slider{
 
 #contenido{	
 	float:left;
-	height:320px;	
-	width:950px;	
-	margin-top: 35px;	
+	height:420px;	
+	width:100%;	
+	margin-top: 60px;
+	border-top:1px solid #A4A4A4;	
+	border-bottom:1px solid #A4A4A4;	
 }
 
 
 article{
 	float:left;
 	width:290px;
-	height:300px;
+	height:90%;
+	margin-top:20px;
+	margin-left:20px;
+	/* border:1px solid black;	 */
+	box-shadow: 0px 0px 10px #888888;
+	-moz-box-shadow: 0px 0px 10px #888888;
+	-o-box-shadow: 0px 0px 10px #888888;
+	opacity: 50;
+	background: white;
+	
+}
+
+article:hover{
+	float:left;
+	width:290px;
+	height:90%;
 	margin-top:10px;
 	margin-left:20px;
-
+	/* border:1px solid black;	 */
+	
+	opacity:1;
+	transform:scale(1.03,1.03);
+	-webkit-transform:scale(1.03,1.03);
+	-moz-transform:scale(1.03,1.03);
+	-o-transform:scale(1.03,1.03);	
+	
+	background: white;
+	 box-shadow:0px 0px 25px black;
+	-webkit-box-shadow:0px 0px 25px black;
+	-moz-box-shadow:0px 0px 25px black;
+	-o-box-shadow:0px 0px 25px black;
+	
 }
 
 h3.titulo{
 	margin: 30px 5px 0px 5px;
 	float:center;
 	font-size:20px;
-	/* font-family: 'Merienda One', sans-serif; */
 	font-family:ubuntuRegular;
 	text-shadow: 5px 2px 5px #888888;	
 	color: #0B0B3B;;
-	
-
 }
+
+
+
 
 #img_cont{
 	float:left;
@@ -237,12 +267,12 @@ h3.titulo{
 	
 }
 
-#img_cont img{
+article img.art_index{
+
 	float:center;
-	width:240px;
-	height:120px;	
-	
-	
+	margin-left:50px;
+	/* border:1px solid black;	 */
+
 }
 
 p.cont_tex{
@@ -364,7 +394,7 @@ div.contenido{
 	text-align:left;			
 	margin: 0px auto;
 	position:relative;
-	/* border: 1px solid;	 */
+	border-bottom:1px solid #A4A4A4;	
 	padding: 5px;
 	 
 	 
