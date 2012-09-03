@@ -9,6 +9,7 @@
 		<meta name="description" content="Tecnologia, Calidad e Ingenio."/>
 		<meta name="keywords" content="empresa web, villavicencio, colombia, gisoft"/>
 		<link rel="stylesheet" href="css/estil.css" type="text/css"/> 
+		<link rel="stylesheet" href="css/servicios.css" type="text/css"/> 
 
 		<!-- Para fuentes -->		
 		<link href='http://fonts.googleapis.com/css?family=Merienda+One|Bangers&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -17,16 +18,10 @@
 		<link rel="stylesheet" href="flexslider.css" type="text/css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script src="jquery.flexslider.js"></script>
-		
-		<!-- Slider -->
-		<script type="text/javascript" charset="utf-8">
-		  $(window).load(function() {
-			$('.flexslider').flexslider({
-				  animation: "slide",
-				  controlsContainer: ".flex-container"
-			});
-		  });
-		</script>
+		<script src="js/servicios.js"> </script>
+
+
+	
 					
 	</head>
 	<body>    
@@ -51,20 +46,80 @@
  		<!-- 	<div id="columna3">
 			<p class="slogan_text">Gisoft S.A.S. "Tecnologia, Calidad e Ingenio". Centrada en el diseño, desarrollo e implementacion de sistemas de informacion, portales web y aplicaciones multimedia "</p>
 			</div>  -->
+ 		
+
+		
 			<div id="columna1">
+					
+				<!-- se mostrara el menu de los  izq -->
+				<div id="menu_iz_serv">
+		 			<div class="menu_iz_elmenetos" id="s1">
+		 				Sistemas de Información
+						Diseño, desarrollo e implementación de sistemas de información desktop y web de la más alta calidad, orientado
+		 			 </div>
+
+		 			<div class="menu_iz_elmenetos" id="s2">
+		 				Servidores, Diseño de portales Web y Aplicaciones multimedia
+		 				Diseño, desarrollo e implementación de sistemas de información desktop y web de la más alta calidad, orientados
+		 			 </div>
+		 				 
+		 			 <div class="menu_iz_elmenetos" id="quitar">
+		 					 Sistemas de Información
+							con propósitos comerciales y/o académicos a la
+		 			 </div>
+
+		 			 <div class="menu_iz_elmenetos">
+		 					 Conectividad (networking)
+							Diseño e implementación de redes de información empresariales que complementan el desarrollo de la empresa y su funcionamiento con
+		 			 </div>
+
+
+		 			  <div class="menu_iz_elmenetos">
+		 					 Soporte y seguridad en redes
+
+							Reconocemos que lo más preciado e importante para una empresa es su información, por ello, ofrecemos la
+		 			 </div>
+
+		 			 <div class="menu_iz_elmenetos">
+		 					 Soporte, configuración y distribución
+							de sistemas de cómputo e informáticos
+
+							Nuestra compañía ofrece servicios de soporte y mantenimiento de equipos de cómputo.Este servicio es clave
+					 </div>
+
+		 			  <div class="menu_iz_elmenetos">
+		 					 Auditoria de sistemas
+
+						Verificación de calidad en el proceso de desarrollo de sistemas de información y el manejo de los procesos de administración de la información de
+		 			 </div>
+
+
+		 			 <div class="menu_iz_elmenetos">
+			 			 Gerencia en sistemas y tecnología
+
+						Implementación de ERP o CRM.
+		 			 </div>
+
+		 		</div>	
+
+
+			<!-- se mostrara el contenido de cada servico-->
+			<div id="contenido_servicos">
+
+				
+
 				<div class="contenido">				
 					<h2 class="titulo"> Nuestros Servicios </h2>
 					<!-- <p class="section_tex">Nuestros servicios de la mas alta calidad en la region</p></br></br></br></br></br></br></br> -->
 
 				</div>
-					
+						
 				<div class="contenido">				
 					<h3 class="titulo">Sistemas de Información </h3>
 					<p class="section_tex">Diseño, desarrollo e implementación de sistemas de información desktop y web de la más alta calidad, orientados a solucionar las problemáticas en cuanto al manejo de la información y la optimización de los procesos de las compañías en su avance asía la modernización y ampliamiento de sus perspectivas empresariales. </p><br></br></br></br></br></br></br></br>
 
 				</div>
-
- 				
+				
 				<div class="contenido">				
 					<a name="seccion1"><h3 class="titulo">Servidores,  Diseño de portales Web <br> y Aplicaciones multimedia </h3></a>
 					<p class="section_tex">Diseño, desarrollo e implementación de sistemas de información desktop y web de la más alta calidad, orientados a solucionar las problemáticas en cuanto al manejo de la información y la optimización de los procesos de las compañías en su avance asía la modernización y ampliamiento de sus perspectivas empresariales. </p></br></br></br></br></br></br></br></br></br>
@@ -75,8 +130,8 @@
 					<p class="section_tex">Creación y diseño de portales web,  aplicaciones multimedia, administración de servidores, incluyendo la venta de hosting y dominios  con propósitos comerciales y/o  académicos  a la medida de nuestros clientes. Este es un servicio amplia utilidad ya sea para grandes, medianas o pequeñas empresas, que estén pensando en la incursión por el mundo del internet, ya sea simplemente mostrando su imagen corporativa y/o buscando el desarrollo de una idea empresarial orientada a la web. </p></br></br></br></br></br></br></br></br></br></br></br>
 
 				</div>
-				
-				
+					
+					
 				<div class="contenido">
 					<a name="seccion2"><h3 class="titulo"> Conectividad (networking) </h3></a>
 					<p class="section_tex">Diseño e implementación de redes de información empresariales que complementan  el desarrollo de la empresa y  su funcionamiento con tecnologías de redes  como intranet y voz ip empresarial. Esencial para aquellas empresas que posean problemas de conectividad y de comunicación entre sus departamentos.</p></br></br></br></br></br></br></br></br></br>
@@ -100,7 +155,8 @@
 				<div class="contenido">
 					<h3 class="titulo"> Gerencia en sistemas y tecnología </h3>
 					<p class="section_tex">Implementación de ERP o CRM.    </p></br></br></br></br></br>
-				</div> 						
+				</div >	
+			</div> 						
 				
 
 
